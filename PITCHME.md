@@ -1,7 +1,8 @@
 ---
 
 # React Hooks
-@fab[react fa-spin]
+
+@fab[fa-react fa-spin]
 
 
 ---
