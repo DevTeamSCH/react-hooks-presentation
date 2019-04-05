@@ -39,12 +39,12 @@
 
 ---
 
-'''jsx
+```jsx
   <div>
     <Item> {this.state.note}<Item>
     <Button color={"blue"} style={{background: "black"}} />
   </div>
-'''
+```
 
 ---
 
