@@ -1,7 +1,7 @@
 
 # React Hooks
 
-@fab(react)
+@fab[react]
 
 ---
 
@@ -9,9 +9,13 @@
 
 ---
 
+@ul
+
 - Frontend könyvtár
 - JavaScript
 - Facebook fejleszti
+
+@ulend
 
 ---
 
@@ -21,11 +25,15 @@
 
 ## Virtuális DOM
 
+@ul[squares]
+
 - a DOM egy része eltárolva a memóriában
 - manipulációkor számon tartja mi változott
 - csak azt rendereli újra
 
+@ulend
 **Előny:** nem kell újratölteni az oldalt
+
 **Hátrány:** RAM használat
 
 ---
