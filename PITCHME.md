@@ -145,10 +145,13 @@ Példa: Custom hook
 
 ---
 
-@snap[north-east span-40]
+@snap[north-east span]
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
-@snap[south-west span-40]
-@quote[I think you shoul.](Ryan Florence)
+- Kompatibilis
+- De tisztább a kód
+
+@snap[south-west span]
+@quote[I think you should.](Ryan Florence)
 @snapend
