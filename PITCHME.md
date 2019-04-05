@@ -3,6 +3,8 @@
 
 # React Hooks
 
+@fab(react)
+
 ---
 
 ## React ismétlés
@@ -56,6 +58,12 @@ Renderelés:
 
   ---
 
+  Event handling
+
+  //TODO Code
+
+  ---
+
     React előnyök, hátrányok.
 
   ---
@@ -63,3 +71,40 @@ Renderelés:
     Hooks
 
   ---
+
+    Problémák a Reacttal:
+    - kis stateful komponenshez is class kell
+    - nagy alkalmazásnál kényelmetlen lehet a sok egymásba ágyazott osztály
+    - event handling sokszor bonyolult
+    - setState, this.state néha kimarad
+
+---
+
+  Megoldás: hookok
+
+---
+
+  Mire valók?
+
+  - Nem kell class
+  - functionben is lehet state
+  - event kezelés egyszerűbb (nem kell bindolni)
+
+---
+
+  Példa: state hook
+
+  //TODO Code
+
+---
+
+  Példa: Effect hook
+  //TODO Code
+
+---
+
+Példa: Custom hook
+
+//TODO Code
+
+---
