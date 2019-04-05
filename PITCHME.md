@@ -1,6 +1,4 @@
 
----
-
 # React Hooks
 
 @fab(react)
@@ -68,11 +66,8 @@
 
 ---
 
-  Stateful komponens
+  ## Stateful komponens
 
----
-
-//TODO: Code
 
 ---
 
@@ -84,6 +79,10 @@
 
 ---
 
+  //TODO: Code
+
+---
+
   ## Összességében:
 
   - Egymásba ágyazhatók
@@ -92,17 +91,9 @@
 
 ---
 
-  Event handling
+  ## Event handling
 
   //TODO Code
-
----
-
-    React előnyök, hátrányok.
-
----
-
-    Hooks
 
 ---
 
@@ -114,11 +105,12 @@
 
 ---
 
-  Megoldás: hookok
+# Megoldás: Hooks
+
 
 ---
 
-  Mire valók?
+  ## Mire valók?
 
   - Nem kell class
   - functionben is lehet state
