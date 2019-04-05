@@ -32,6 +32,7 @@
 - csak azt rendereli újra
 
 @ulend
+
 **Előny:** nem kell újratölteni az oldalt
 
 **Hátrány:** RAM használat
@@ -42,6 +43,7 @@
 
 - JavaScript XML
 - HTML + JavaScript egyben
+- Komponensek
 
 ---
 
@@ -79,7 +81,7 @@
 
 ---
 
-  Jellemzők:
+  ## Jellemzők:
   - osztály
   - állapotok tárolása is
   - életciklus függvények
@@ -105,16 +107,16 @@
 
 ---
 
-    Problémák a Reacttal:
-    - kis stateful komponenshez is class kell
-    - nagy alkalmazásnál kényelmetlen lehet a sok egymásba ágyazott osztály
-    - event handling sokszor bonyolult
-    - setState, this.state néha kimarad
+## Problémák a Reacttal:
+
+  - kis stateful komponenshez is class kell
+  - nagy alkalmazásnál kényelmetlen lehet a sok egymásba ágyazott osztály
+  - event handling sokszor bonyolult
+  - setState, this.state könnyen kimarad
 
 ---
 
 # Megoldás: Hooks
-
 
 ---
 
@@ -142,3 +144,11 @@ Példa: Custom hook
 //TODO Code
 
 ---
+
+@snap[north-east span-40]
+@quote[Don't rewrite the whole App with hooks.](Dan Abramov)
+@snapend
+
+@snap[south-west span-40]
+@quote[I think you shoul.](Ryan Florence)
+@snapend
