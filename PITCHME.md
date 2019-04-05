@@ -17,60 +17,94 @@
 
 ---
 
-Renderelés:
+## Főbb elemei
 
-- JSX - JavaScript XML
+---
+
+## Virtuális DOM
+
+- a DOM egy része eltárolva a memóriában
+- manipulációkor számon tartja mi változott
+- csak azt rendereli újra
+
+**Előny:** nem kell újratölteni az oldalt
+**Hátrány:** RAM használat
+
+---
+
+## JSX
+
+- JavaScript XML
 - HTML + JavaScript egyben
-- Virtuális DOM
 
 ---
 
-  Komponensek
+'''jsx
+  <div>
+    <Item> {this.state.note}<Item>
+    <Button color={"blue"} style={{background: "black"}} />
+  </div>
+'''
 
 ---
 
-  Egyszerű komponens:
+  ## Komponensek
+
+---
+
+  ## Egyszerű komponens
+
+---
+
+  ## Jellemzők:
+  - függvény
+  - általában csak megjelenítésre
+  - kisebb részekre bontás
+  - újrafelhasználhatóság
+
+---
 
 //TODO: Code
 
 ---
 
-  Általában csak megjelenítésre
-  Könnyen szétbonthatjuk az alkalmazást kisebb részekre
-  Újrafelhasználhatóság
-
----
-
   Stateful komponens
 
-  //TODO: Code
 ---
 
-  Állapotok tárolására
-  Életciklus függvények
-  Adat lekérésre
+//TODO: Code
 
 ---
 
-  Egymásba ágyazhatók
-  Props: adatátadás
-  Szülő gyerek viszony (DOM)
+  Jellemzők:
+  - osztály
+  - állapotok tárolása is
+  - életciklus függvények
+  - adat lekérés
 
-  ---
+---
+
+  ## Összességében:
+
+  - Egymásba ágyazhatók
+  - Props: adatátadás
+  - Szülő gyerek viszony (DOM)
+
+---
 
   Event handling
 
   //TODO Code
 
-  ---
+---
 
     React előnyök, hátrányok.
 
-  ---
+---
 
     Hooks
 
-  ---
+---
 
     Problémák a Reacttal:
     - kis stateful komponenshez is class kell
