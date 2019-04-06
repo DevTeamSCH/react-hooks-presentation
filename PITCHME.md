@@ -53,7 +53,10 @@
 ```HTML
   <div>
     <Item> {this.state.note}<Item>
-    <Button color={"blue"} style={{background: "black"}} />
+    <Button color={"blue"} style={{background: "black"}}
+    onClick={() => this.setState({count: this.state.count + 1 })}>
+      Click me!
+    <Button/>
   </div>
 ```
 
@@ -74,7 +77,21 @@
 
 ---
 
-//TODO: Code
+```javascript
+const MyComponent = (props) =>{
+  <div>
+    {
+      props.clicked ?
+      <Input
+        value={props.todo}
+        onChange={(event) => this.props.handleChange(event)}
+      />
+      :
+      <Text>{props.todo}</Text>
+    }
+  </div>
+}
+```
 
 ---
 
@@ -89,7 +106,28 @@
 
 ---
 
-  //TODO: Code
+```javascript
+class MyComponent extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+      count: 0,
+      todos: []
+    }
+  }
+  ...
+
+  render(){
+   <div>
+     <h1> Todo-k száma: {this.state.count} <h1>
+     {todos.map((todo) =>
+       <Todo todo=todo.text ... />
+     )}
+  </div>
+  }
+}
+```
 
 ---
 
@@ -136,7 +174,7 @@
 ---
 
 ## State hook
-**useState()***
+**useState()**
 
   //TODO Code
   ```javascript
@@ -145,7 +183,7 @@
 
   Létrehozz a state változót a kezdőértékkel
   Visszaadja a változót és egy updatelő függvényt
-  
+
 ---
 
 ## Effect hook
