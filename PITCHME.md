@@ -59,6 +59,9 @@
     <Button/>
   </div>
 ```
+---
+
+[https://i.imgflip.com/2kuh6f.jpg](JSX)
 
 ---
 
@@ -116,13 +119,13 @@ class MyComponent extends Component{
       todos: []
     }
   }
-  ...
+  // ...
 
   render(){
    <div>
      <h1> Todo-k száma: {this.state.count} <h1>
      {todos.map((todo) =>
-       <Todo todo=todo.text ... />
+       <Todo todo=todo.text {...} />
      )}
   </div>
   }
