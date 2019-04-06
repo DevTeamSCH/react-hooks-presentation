@@ -1,7 +1,7 @@
 
 # React Hooks
 
-@fab[react]
+@fab[react fa-spin]
 
 ---
 
@@ -9,6 +9,7 @@
 
 ---
 
+## Mi a React?
 @ul
 
 - Frontend könyvtár
@@ -27,13 +28,13 @@
 
 @ul[squares]
 
-- a DOM egy része eltárolva a memóriában
+- a DOM eltárolva a memóriában
 - manipulációkor számon tartja mi változott
 - csak azt rendereli újra
 
 @ulend
 
-**Előny:** nem kell újratölteni az oldalt
+**Előny:** nem kell újratölteni az egész oldalt
 
 **Hátrány:** RAM használat
 
@@ -47,7 +48,9 @@
 
 ---
 
-```jsx
+### Példa JSX
+
+```HTML
   <div>
     <Item> {this.state.note}<Item>
     <Button color={"blue"} style={{background: "black"}} />
@@ -62,13 +65,12 @@
 
   ## Egyszerű komponens
 
----
-
-  ## Jellemzők:
+@ul
   - függvény
   - általában csak megjelenítésre
   - kisebb részekre bontás
   - újrafelhasználhatóság
+@ulend
 
 ---
 
@@ -78,14 +80,12 @@
 
   ## Stateful komponens
 
-
----
-
-  ## Jellemzők:
+@ul
   - osztály
   - állapotok tárolása is
   - életciklus függvények
   - adat lekérés
+@ulend
 
 ---
 
@@ -110,9 +110,9 @@
 ## Problémák a Reacttal:
 
   - kis stateful komponenshez is class kell
-  - nagy alkalmazásnál kényelmetlen lehet a sok egymásba ágyazott osztály
+  - nagy alkalmazásnál sok egymásba ágyazott osztály "wrapper hell"
   - event handling sokszor bonyolult
-  - setState, this.state könnyen kimarad
+  - this.setState, this.state könnyen kimarad
 
 ---
 
@@ -123,25 +123,45 @@
   ## Mire valók?
 
   - Nem kell class
-  - functionben is lehet state
+  - függvényben is lehet state
   - event kezelés egyszerűbb (nem kell bindolni)
 
 ---
 
-  Példa: state hook
+  ## Általánosságban
 
+  - use-al kezdődnek
+  - a React DOM-ba nyúlnak bele
+
+---
+
+## State hook
+**useState()***
+
+  //TODO Code
+  ```javascript
+  const [text, setText] = useState('Kezdő érték')
+  ```
+
+  Létrehozz a state változót a kezdőértékkel
+  Visszaadja a változót és egy updatelő függvényt
+  
+---
+
+## Effect hook
   //TODO Code
 
 ---
 
-  Példa: Effect hook
-  //TODO Code
-
----
-
-Példa: Custom hook
+## Custom hook
 
 //TODO Code
+
+---
+
+### Már reduxhoz is van:
+
+useReducer()
 
 ---
 
