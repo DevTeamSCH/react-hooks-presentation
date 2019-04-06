@@ -61,7 +61,7 @@
 ```
 ---
 
-[https://i.imgflip.com/2kuh6f.jpg](JSX)
+![https://i.imgflip.com/2kuh6f.jpg](JSX)
 
 ---
 
