@@ -13,7 +13,7 @@
 @ul
 
 - Frontend könyvtár
-- JavaScript
+- JavaScript vagy TypeScript
 - Facebook fejleszti
 
 @ulend
@@ -61,7 +61,7 @@
 ```
 ---
 
-![https://i.imgflip.com/2kuh6f.jpg](JSX)
+![JSX](https://i.imgflip.com/2kuh6f.jpg)
 
 ---
 
@@ -184,7 +184,7 @@ class MyComponent extends Component{
   const [text, setText] = useState('Kezdő érték')
   ```
 
-  Létrehozz a state változót a kezdőértékkel
+  Létrehozza a state változót a kezdőértékkel
   Visszaadja a változót és egy updatelő függvényt
 
 ---
@@ -210,7 +210,7 @@ useReducer()
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
-- Kompatibilis
+- Visszafele kompatibilis
 - De tisztább a kód
 
 @snap[south-west span]
