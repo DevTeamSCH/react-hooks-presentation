@@ -26,18 +26,18 @@
 
 ## Virtuális DOM
 
-@ul[squares]
+@ul
 
 - a DOM eltárolva a memóriában
 - manipulációkor számon tartja mi változott
 - csak azt rendereli újra
 
-@ulend
 
 **Előny:** nem kell újratölteni az egész oldalt
 
 **Hátrány:** RAM használat
 
+@ulend
 ---
 
 ## JSX
