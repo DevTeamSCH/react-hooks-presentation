@@ -87,7 +87,7 @@ const MyComponent = (props) =>{
       props.clicked ?
       <Input
         value={props.todo}
-        onChange={(event) => this.props.handleChange(event)}
+        onChange={(event) => props.handleChange(event)}
       />
       :
       <Text>{props.todo}</Text>
@@ -98,7 +98,7 @@ const MyComponent = (props) =>{
 
 ---
 
-  ## Stateful komponens
+## Stateful komponens
 
 @ul
   - osztály
