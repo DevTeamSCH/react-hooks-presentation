@@ -77,7 +77,7 @@
 
   ## Komponensek
 
-  ![Components](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi1wIn9lcHhAhXSZ1AKHVT5B6sQjRx6BAgBEAU&url=http%3A%2F%2Fwww.iconarchive.com%2Fshow%2Fravenna-3d-icons-by-double-j-design%2FComponents-icon.html&psig=AOvVaw3XxFT2GI54dZOENI6to3Lo&ust=1554836080118794)
+  ![Components](http://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Components-icon.png)
 ---
 
   ## Egyszerű komponens
@@ -279,11 +279,11 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 @snapend
 
 @snap[west sidebar]
-![PLATE](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiQ3JOPlcHhAhXFZlAKHbRsBasQjRx6BAgBEAU&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DV-QO-KO90iQ&psig=AOvVaw2tfj4cVMgtxoX267c-yL3t&ust=1554835866431712)
+![PLATE](https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg)
 @snapend
 
 @snap[east sidebar]
-![ICECREAM](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjgssjMlsHhAhVEaFAKHaw1CokQjRx6BAgBEAU&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwXLf18DsV-I&psig=AOvVaw2tfj4cVMgtxoX267c-yL3t&ust=1554835866431712)
+![ICECREAM](https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg)
 @snapend
 
 
