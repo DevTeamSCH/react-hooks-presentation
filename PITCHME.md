@@ -272,20 +272,21 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 - számít a sorrend
 @ulend
 
----?image=https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg
+---?image=https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg
 
-@snap[north-east span]
+@snap[north-east span white]
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
 @snap[west sidebar]
-![Ryan](https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg)
+![Ryan](https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg)
 @snapend
 
-
+@css[white](
 - Visszafele kompatibilis
 - De tisztább a kód
+)
 
-@snap[south-west span]
+@snap[south-west span white]
 @quote[I think you should.](Ryan Florence)
 @snapend
