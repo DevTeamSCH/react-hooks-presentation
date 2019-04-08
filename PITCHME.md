@@ -156,25 +156,29 @@ class MyComponent extends Component{
 
   ## Event handling
 
-  Konstructorban:
+  Konstruktorban:
   ```javascript
   this.handleChange = this.handleChange.bind(this)
   ```
-
+  Tagfüggvény:
   ```javascript
   handleChange(event){
-    this.setState({ [event.target.name] : event.target.value });
+      this.setState({ [event.target.name] : event.target.value });
   }
   ```
-
+  Használat pl:
+  ```javascript
+  <input onChange={(e) => this.handleChange(e)} value={this.state.todo}
+        name='todo' />
+  ```
 ---
 
 ## Problémák a Reacttal:
 
-  - kis stateful komponenshez is class kell
-  - nagy alkalmazásnál sok egymásba ágyazott osztály "wrapper hell"
-  - event handling sokszor bonyolult
-  - this.setState, this.state könnyen kimarad
+  - kis stateful komponens is class
+  - nagy alkalmazásnál "wrapper hell"
+  - event handling
+  - this.setState, this.state
 
 ---
 
@@ -189,15 +193,15 @@ class MyComponent extends Component{
   - Nem kell class
   - függvényben is lehet state
   - event kezelés egyszerűbb
-  - nem kell életciklus függvény
+  - életciklus függvény mentes
 @ulend
 
 ---
 
   ## Általánosságban
 
-  - use-al kezdődnek
-  - a React DOM-ba nyúlnak bele
+  - **use**-al kezdődnek
+  - a ReactDOM-ba nyúlnak bele
 
 ---
 
@@ -244,6 +248,7 @@ Saját hookot is lehet írni
 
 - **use**-al kell kezdődjön
 - más hookok kombinálása
+- újrahasznosítható
 
 ---
 
@@ -259,7 +264,7 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 
 ## Szabályok
 @ul
-- Mindig a függvény elején hívjuk
+- mindig a függvény elején hívjuk
 - ne használjuk ciklusban, if-ben
 - számít a sorrend
 @ulend
