@@ -1,7 +1,7 @@
 
 # React Hooks
 
-@fab[react fa-spin]
+@fab[react fa-spin fa-6x aqua]
 
 ---
 
