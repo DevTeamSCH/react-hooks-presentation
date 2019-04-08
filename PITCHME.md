@@ -272,18 +272,14 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 - számít a sorrend
 @ulend
 
----
+---?image=https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg
 
 @snap[north-east span]
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
 @snap[west sidebar]
-![PLATE](https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg)
-@snapend
-
-@snap[east sidebar]
-![ICECREAM](https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg)
+![Ryan](https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg)
 @snapend
 
 
