@@ -278,7 +278,7 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
-@snap[west sidebar]
+@snap[west]
 ![Ryan](assets/ryan.jpg)
 @snapend
 

@@ -4,7 +4,6 @@ layout : center
 # Look-and-Feel
 theme-override : PITCHME.css
 highlight : ir-black
-controls-layout : edges
 
 # Behavior
 transition : none
