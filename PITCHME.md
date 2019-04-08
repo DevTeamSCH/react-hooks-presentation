@@ -53,7 +53,7 @@
 @ul
 - JavaScript XML
 - HTML + JavaScript egyben
-- Komponensek
+- komponensek
 @ulend
 
 ---
@@ -149,9 +149,9 @@ class MyComponent extends Component{
 
   ## Összességében:
 
-  - Egymásba ágyazhatók
-  - Props: adatátadás
-  - Szülő gyerek viszony (DOM)
+  - egymásba ágyazhatók
+  - props: adatátadás
+  - szülő-gyerek viszony (DOM)
 
 ---
 
@@ -193,7 +193,7 @@ class MyComponent extends Component{
 
 **Tisztább kód**
 @ul
-  - Nem kell class
+  - nem kell class
   - függvényben is lehet state
   - event kezelés egyszerűbb
   - életciklus függvény mentes
@@ -239,9 +239,9 @@ class MyComponent extends Component{
 
 ---
 
-  - Minden rerenderelésnél lefut
+  - minden rerenderelésnél lefut
   - returnben lehet cleanup
-  - A 2. paraméterben, mikor változzon
+  - a 2. paraméterben, mikor változzon
 
 ---
 
@@ -272,19 +272,20 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 - számít a sorrend
 @ulend
 
----?image=https://i.ytimg.com/vi/V-QO-KO90iQ/maxresdefault.jpg
+---?image=assets/dan.jpg
 
 @snap[north-east span white]
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
 @snapend
 
 @snap[west sidebar]
-![Ryan](https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg)
+![Ryan](assets/ryan.jpg)
 @snapend
 
 
-@css[white fragment](- Visszafele kompatibilis)
-@css[white fragment](- De tisztább a kód)
+@css[white fragment](Visszafele kompatibilis)
+
+@css[white fragment](De tisztább a kód)
 
 @snap[south-west span white]
 @quote[I think you should.](Ryan Florence)
