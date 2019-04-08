@@ -180,7 +180,6 @@ class MyComponent extends Component{
 ## State hook
 **useState()**
 
-  //TODO Code
   ```javascript
   const [text, setText] = useState('Kezdő érték')
   ```
@@ -191,7 +190,7 @@ class MyComponent extends Component{
 ---
 
 ## Effect hook
-  **useEffect( /függvény/ )**
+  **useEffect(** */függvény/* **)**
 
   ```javascript
   useEffect(() => {
@@ -211,21 +210,24 @@ class MyComponent extends Component{
   - Minden rerenderelésnél lefut
   - returnben lehet cleanup
   - 2. paraméterben, mikor változzon
-  
+
 ---
 
 ## Custom hook
 
 Saját hookot is lehet írni
 
-use-al kell kezdődjön
-//TODO Code
+**use**-al kell kezdődjön
 
 ---
 
 ### Már reduxhoz is van:
 
-useReducer()
+**useReducer()**
+
+```javascript
+const [state, dispatch] = useReducer(reducer, initialArg, init);
+```
 
 ---
 
@@ -234,7 +236,8 @@ useReducer()
 - Mindig a függvény elején hívjuk
 - ne használjuk ciklusban, if-ben
 - számít a sorrend
-@endul
+@ulend
+
 ---
 
 @snap[north-east span]
