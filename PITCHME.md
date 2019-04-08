@@ -244,7 +244,7 @@ class MyComponent extends Component{
   - minden rerenderelésnél lefut
   - returnben lehet cleanup
   - a 2. paraméterben, mikor változzon
-  @endul
+  @ulend
 
 ---
 
@@ -279,10 +279,6 @@ const [state, dispatch] = useReducer(reducer, init);
 
 @snap[north-east span white]
 @quote[Don't rewrite the whole App with hooks.](Dan Abramov)
-@snapend
-
-@snap[west]
-![Ryan](assets/ryan.jpg)
 @snapend
 
 
