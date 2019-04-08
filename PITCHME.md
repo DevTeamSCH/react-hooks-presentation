@@ -282,10 +282,9 @@ const [state, dispatch] = useReducer(reducer, initialArg, init);
 ![Ryan](https://i.ytimg.com/vi/wXLf18DsV-I/maxresdefault.jpg)
 @snapend
 
-@css[white](
-- Visszafele kompatibilis
-- De tisztább a kód
-)
+
+@css[white fragment](- Visszafele kompatibilis)
+@css[white fragment](- De tisztább a kód)
 
 @snap[south-west span white]
 @quote[I think you should.](Ryan Florence)
