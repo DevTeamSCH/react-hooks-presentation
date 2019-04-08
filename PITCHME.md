@@ -50,9 +50,11 @@
 
 ## JSX
 
+@ul
 - JavaScript XML
 - HTML + JavaScript egyben
 - Komponensek
+@ulend
 
 ---
 
@@ -154,7 +156,16 @@ class MyComponent extends Component{
 
   ## Event handling
 
-  //TODO Code
+  Konstructorban:
+  ```javascript
+  this.handleChange = this.handleChange.bind(this)
+  ```
+
+  ```javascript
+  handleChange(event){
+    this.setState({ [event.target.name] : event.target.value });
+  }
+  ```
 
 ---
 
@@ -173,10 +184,13 @@ class MyComponent extends Component{
 
   ## Mire valók?
 
+**Tisztább kód**
+@ul
   - Nem kell class
   - függvényben is lehet state
   - event kezelés egyszerűbb
   - nem kell életciklus függvény
+@ulend
 
 ---
 
@@ -195,7 +209,7 @@ class MyComponent extends Component{
   ```
 
   Létrehozza a state változót a kezdőértékkel
-  
+
   Visszaadja a változót és egy updatelő függvényt
 
 ---
@@ -228,7 +242,8 @@ class MyComponent extends Component{
 
 Saját hookot is lehet írni
 
-**use**-al kell kezdődjön
+- **use**-al kell kezdődjön
+- más hookok kombinálása
 
 ---
 
