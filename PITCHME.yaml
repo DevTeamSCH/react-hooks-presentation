@@ -1,8 +1,7 @@
 # Layout
-layout : center-left
+layout : center
 
 # Look-and-Feel
-theme : night
 theme-override : PITCHME.css
 highlight : ir-black
 
