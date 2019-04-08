@@ -165,7 +165,8 @@ class MyComponent extends Component{
 
   - Nem kell class
   - függvényben is lehet state
-  - event kezelés egyszerűbb (nem kell bindolni)
+  - event kezelés egyszerűbb
+  - nem kell életciklus függvény
 
 ---
 
@@ -190,12 +191,34 @@ class MyComponent extends Component{
 ---
 
 ## Effect hook
-  //TODO Code
+  **useEffect( /függvény/ )**
 
+  ```javascript
+  useEffect(() => {
+    function handleStatusChange(status) {
+     setIsOnline(status.isOnline);
+   }
+   ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+
+   return function cleanup() {
+     ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+   };
+ }, [props.friends.id]);
+  ```
+
+---
+
+  - Minden rerenderelésnél lefut
+  - returnben lehet cleanup
+  - 2. paraméterben, mikor változzon
+  
 ---
 
 ## Custom hook
 
+Saját hookot is lehet írni
+
+use-al kell kezdődjön
 //TODO Code
 
 ---
@@ -204,6 +227,14 @@ class MyComponent extends Component{
 
 useReducer()
 
+---
+
+## Szabályok
+@ul
+- Mindig a függvény elején hívjuk
+- ne használjuk ciklusban, if-ben
+- számít a sorrend
+@endul
 ---
 
 @snap[north-east span]
