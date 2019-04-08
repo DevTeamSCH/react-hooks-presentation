@@ -226,22 +226,25 @@ class MyComponent extends Component{
 
   ```javascript
   useEffect(() => {
-    function handleStatusChange(status) {
+    function handleChange(status) {
      setIsOnline(status.isOnline);
    }
-   ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+   ChatAPI.subscribe(props.friend.id, handleChange);
 
    return function cleanup() {
-     ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+     ChatAPI.unsubscribe(props.friend.id, handleChange);
    };
  }, [props.friends.id]);
   ```
 
 ---
 
+  ## Effect hook:
+  @ul
   - minden rerenderelésnél lefut
   - returnben lehet cleanup
   - a 2. paraméterben, mikor változzon
+  @endul
 
 ---
 
@@ -260,7 +263,7 @@ Saját hookot is lehet írni
 **useReducer()**
 
 ```javascript
-const [state, dispatch] = useReducer(reducer, initialArg, init);
+const [state, dispatch] = useReducer(reducer, init);
 ```
 
 ---
