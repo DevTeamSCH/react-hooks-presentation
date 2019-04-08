@@ -32,12 +32,20 @@
 - manipulációkor számon tartja mi változott
 - csak azt rendereli újra
 
+@ulend
+---
+
+## Virtuális DOM
+
+- a DOM eltárolva a memóriában
+- manipulációkor számon tartja mi változott
+- csak azt rendereli újra
+
 
 **Előny:** nem kell újratölteni az egész oldalt
 
 **Hátrány:** RAM használat
 
-@ulend
 ---
 
 ## JSX
@@ -81,7 +89,7 @@
 ---
 
 ```javascript
-const MyComponent = (props) =>{
+const MyComponent = (props) =>(
   <div>
     {
       props.clicked ?
@@ -93,7 +101,7 @@ const MyComponent = (props) =>{
       <Text>{props.todo}</Text>
     }
   </div>
-}
+);
 ```
 
 ---
@@ -122,12 +130,14 @@ class MyComponent extends Component{
   // ...
 
   render(){
-   <div>
-     <h1> Todo-k száma: {this.state.count} <h1>
-     {todos.map((todo) =>
-       <Todo todo=todo.text {...} />
-     )}
-  </div>
+    return (
+      <div>
+         <h1> Todo-k száma: {this.state.count} <h1>
+         {todos.map((todo) =>
+           <Todo todo=todo.text {...} />
+         )}
+      </div>
+    );
   }
 }
 ```
@@ -185,6 +195,7 @@ class MyComponent extends Component{
   ```
 
   Létrehozza a state változót a kezdőértékkel
+  
   Visszaadja a változót és egy updatelő függvényt
 
 ---
