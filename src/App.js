@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CatContainer from './components/CatContainer'
+import CatContainer from './components/CatContainerWHooks'
 
 
 class App extends Component {

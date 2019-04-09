@@ -14,7 +14,10 @@ export default class MagicInput extends Component {
         <div>
         {
           this.state.clicked ?
-          <Input name={this.props.name} onBlur={() => this.setState({clicked: false})} onChange={(e) => this.props.onChange(e)} value={this.props.text}/>
+          <Input name={this.props.name}
+            onBlur={() => this.setState({clicked: false})}
+            onChange={(e) => this.props.onChange(e)}
+            value={this.props.text}/>
           :
           <span onClick={() => this.setState({clicked: true})}>{this.props.text}</span>
         }
