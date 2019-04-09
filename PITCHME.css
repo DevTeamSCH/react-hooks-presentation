@@ -9,3 +9,7 @@
 .aqua {
   color: aqua;
 }
+
+img {
+  border: solid white 0px;
+}
