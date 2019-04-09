@@ -11,5 +11,5 @@
 }
 
 img {
-  border: 0px solid white;
+  border: 0px solid white !important;
 }
