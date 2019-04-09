@@ -130,8 +130,9 @@ class MyComponent extends Component{
       todos: []
     }
   }
-  // ...
-
+  ```
+  
+  ```javascript
   render(){
     return (
       <div>
